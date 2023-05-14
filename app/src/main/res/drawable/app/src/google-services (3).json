@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "838646224380",
+    "project_id": "abvgiet-ce4ce",
+    "storage_bucket": "abvgiet-ce4ce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:838646224380:android:00f12e9ece48194c784e79",
+        "android_client_info": {
+          "package_name": "com.example.college"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "838646224380-vdi0j24a5s6qkefo9lon13mjbfol33jh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK-JXy4SyUd1bgqNrSys6wJfE2LyzNsC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "838646224380-vdi0j24a5s6qkefo9lon13mjbfol33jh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

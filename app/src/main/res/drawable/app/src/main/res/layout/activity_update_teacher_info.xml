@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.UpdateTeacherInfo"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="36dp"
+        android:id="@+id/updateTeacherImage"
+        android:src="@drawable/man"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/updateImgbtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="-40dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/ic_add"
+        app:fabCustomSize="30dp"
+        tools:ignore="ContentDescription,HardcodedText,RtlHardcoded,SpeakableTextPresentCheck,ImageContrastCheck"
+        android:elevation="5dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/updateTeacherName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:hint="Name"
+            android:inputType="text"
+            tools:ignore="HardcodedText,TextContrastCheck,VisualLintTextFieldSize" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            tools:ignore="ExtraText">
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/updateTeacherPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="2dp"
+                android:hint="Post"
+                android:inputType="text"
+                tools:ignore="HardcodedText,TextContrastCheck,VisualLintTextFieldSize" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/updateTeacherEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="2dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    tools:ignore="HardcodedText,TextContrastCheck,VisualLintTextFieldSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="5dp">
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Update"
+        android:textSize="15dp"
+        android:fontFamily="@font/bangers"
+        android:id="@+id/updateInfoButton"
+        android:elevation="5dp"
+        android:drawableLeft="@drawable/ic_baseline_group_24"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+      android:textSize="15dp"
+        android:fontFamily="@font/bangers"
+        android:id="@+id/deleteInfoButton"
+        android:elevation="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:drawableLeft="@drawable/ic_delete"
+        />
+
+</LinearLayout>
+</LinearLayout>

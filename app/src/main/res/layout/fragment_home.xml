@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Ui.Home.HomeFragment"
+    android:background="#fff">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="UselessParent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:elevation="5dp"
+            android:id="@+id/image_slider"
+            app:iss_period="1000"
+            app:iss_auto_cycle="true"
+            app:iss_corner_radius="20"
+            android:background="#fff"
+            android:layout_margin="5dp"
+            android:scrollIndicators="bottom"
+            android:outlineSpotShadowColor="#FFC107"
+            app:iss_title_background="@drawable/default_gradient"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The ABVGIET TALE"
+            android:layout_marginTop="36dp"
+            android:textSize="@dimen/title_size"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FF5722"
+            android:fontFamily="@font/latoblackitalic"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            android:layout_marginTop="@dimen/text_margin"
+            android:layout_marginHorizontal="@dimen/text_margin"
+            android:textSize="@dimen/text_size"
+            android:gravity="fill_horizontal"
+            android:textColor="@color/black"
+            android:fontFamily="@font/latolight"
+            android:justificationMode="inter_word"
+            android:padding="5dp"
+         />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:background="@color/black"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="36dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/departments"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/title_size"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/latoblackitalic"
+                    />
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:cardBackgroundColor="#D56FE6"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="8dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginHorizontal="@dimen/text_margin"
+                            android:layout_marginTop="@dimen/text_margin"
+                            android:fontFamily="@font/latoblackitalic"
+                            android:text=" COMPUTER SCIENCE"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size"
+                            android:background="@color/white"
+                            android:gravity="center_horizontal"
+                            android:padding="5dp"
+
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/black" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_margin="8dp"
+                            android:layout_marginHorizontal="@dimen/text_margin"
+                            android:layout_marginTop="@dimen/text_margin"
+                            android:fontFamily="@font/latoblackitalic"
+                            android:gravity="center_horizontal"
+                            android:text="COMPUTER SCIENCE"
+                            android:background="@color/white"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size"
+                            android:padding="5dp"
+
+
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/black" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_margin="8dp"
+                            android:layout_marginHorizontal="@dimen/text_margin"
+                            android:layout_marginTop="@dimen/text_margin"
+                            android:fontFamily="@font/latoblackitalic"
+                            android:gravity="center_horizontal"
+                            android:text="COMPUTER SCIENCE"
+                            android:background="@color/white"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size"
+                            android:padding="5dp"
+
+
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/black" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/text_margin">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_details"
+                android:layout_marginTop="36dp"
+                android:textSize="@dimen/title_size"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#FF5722"
+                android:fontFamily="@font/latoblackitalic"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A.B.V.G.I.E.T Pragatinagar"
+                android:layout_marginTop="@dimen/text_margin"
+                android:layout_marginHorizontal="@dimen/text_margin"
+                android:textSize="@dimen/text_size"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latobold"
+                android:justificationMode="inter_word"
+                android:padding="5dp"
+                android:drawableLeft="@drawable/iconshome"
+                android:drawablePadding="20dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\t\t:\t\t\t01783-253919 \n\n\t\t:\t\t\t 01783-253918"
+                android:layout_marginTop="@dimen/text_margin"
+                android:layout_marginHorizontal="@dimen/text_margin"
+                android:textSize="@dimen/text_size"
+               android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:contextClickable="true"
+                android:textIsSelectable="true"
+                android:fontFamily="@font/latobold"
+                android:justificationMode="inter_word"
+                android:padding="5dp"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="32dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\t\t:\tdirector.abv@gmail.com \n\n\t\t:\tabvgiet.2011@gmail.com"
+                android:layout_marginTop="@dimen/text_margin"
+                android:longClickable="true"
+                android:layout_marginHorizontal="@dimen/text_margin"
+                android:textSize="@dimen/text_size"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latobold"
+                android:justificationMode="inter_word"
+                android:clickable="true"
+                android:textIsSelectable="true"
+                android:padding="5dp"
+                android:linksClickable="true"
+                android:drawableLeft="@drawable/iconsemail"
+                android:drawablePadding="32dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="40dp"
+                android:background="@color/purple_200">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="36dp"
+                android:textSize="@dimen/title_size"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#FF5722"
+                android:fontFamily="@font/latoblackitalic"
+                android:drawableLeft="@drawable/address"
+                android:drawablePadding="30dp"
+                android:gravity="center_vertical"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="ABVGIET\nPragatinagar (Gumma)\nTehsil.Kotkhai\nDistt. Shimla(H.P)\nPin: 171202.\nTelefax\tNo.: 01783-253919"
+                android:layout_marginTop="@dimen/text_margin"
+                android:layout_marginHorizontal="@dimen/text_margin"
+                android:textSize="@dimen/text_size"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latobold"
+                android:textIsSelectable="true"
+                android:justificationMode="inter_word"
+                android:padding="5dp"
+                android:drawableLeft="@drawable/logo"
+                android:drawablePadding="32dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Map"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/title_size"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#FF5722"
+                android:fontFamily="@font/latoblackitalic"
+                android:drawableLeft="@drawable/mapnav"
+                android:drawablePadding="30dp"
+                android:gravity="center_vertical"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/black" />
+            <ImageView
+                android:layout_marginTop="50dp"
+                android:id="@+id/map"
+                android:layout_width="wrap_content"
+                android:layout_height="230dp"
+                android:src="@drawable/abvmap"
+                android:scaleType="fitXY"/>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
+
+</FrameLayout>
