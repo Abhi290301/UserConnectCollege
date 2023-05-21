@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".LoginPages.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="@font/unlock"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/abvgietian_s_nlogin_page"
+                    android:textColor="#455A64"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@drawable/login"
+                    app:drawableTintMode="screen" />
+            </LinearLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/rollno"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#E6D5D5"
+                    android:hint="@string/university_roll_no"
+                    android:textSize="22sp"
+                    android:inputType="text"
+                    android:padding="2dp"
+                    android:drawableStart="@drawable/collegeroll"
+                    tools:ignore="VisualLintTextFieldSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#E6D5D5"
+                    android:hint="@string/password"
+                    android:drawableStart="@drawable/passwordicon"
+                    android:textSize="20sp"
+                    android:inputType="textPassword"
+
+                    android:padding="2dp"
+                    tools:ignore="VisualLintTextFieldSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/loginbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="30dp"
+                android:text="@string/login"
+                android:textAllCaps="false"
+                android:background="@drawable/loginbtn"
+                />
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/progressbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-78dp"
+                    app:showAnimationBehavior="outward"
+                    android:visibility="invisible"
+                    android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/forgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:gravity="center_vertical"
+                android:text="@string/forgot_password_click_here"
+                android:textSize="15sp"
+                tools:ignore="TextSizeCheck"
+                android:drawableLeft="@drawable/forgotpassword"
+                />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

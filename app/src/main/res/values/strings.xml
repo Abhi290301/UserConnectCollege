@@ -8,6 +8,18 @@
 A.B.V.G.I.E.T Pragatinagar offers you an opportunity to dedicate yourself as a qualified professional to the development of the nation and alleviation of sufferings of humanity. Our main objective is to teach, train and prepare the students to a level where they can handle any situation independently to achieve higher degree of excellence in professionalism. The Institute has a well qualified, experienced and dedicated faculty. The highly pragmatic and progressive environment developed by the talented faculty is conducive for the development of learning, empowerment of knowledge and skill enhancement.
 
 </string>
+    <string name="existing_user_log_in_here">Existing User? Log In Here</string>
+    <string name="forgot_password_click_here">Forgot password? Click here</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="university_roll_no">University Roll No.</string>
+    <string name="abvgietian_s_nlogin_page">ABVGIETian\'s\nLogin Page</string>
     <string name="departments">Departments</string>
     <string name="contact_details">Contact Details</string>
+    <string name="app_name">A.B.V.G.I.E.T</string>
+    <string name="computer_science">Computer Science</string>
+    <string name="todo">TODO</string>
+    <string name="welcome_to_abvgiet_nregister_here">Welcome to ABVGIET\nRegister Here</string>
+    <string name="name">  Name</string>
+    <string name="we_learn_from_failure_not_from_success_bram_stoker">“We learn from failure, not from success!”― Bram Stoker. ...</string>
 </resources>

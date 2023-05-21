@@ -4,12 +4,112 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Ui.Faculty.FacultyFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Faculty"
-        android:gravity="center"/>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/bangers"
+                android:gravity="center"
+                android:text="@string/computer_science"
+                android:textColor="#FF9800"
+                android:textSize="20sp"
+                android:background="#B8B4B4"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#FFC107"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/computerScienceDepartment"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/csNoData"
+                android:orientation="vertical">
+                <include layout="@layout/no_data_found"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ELECTRONICS DEPARTMENT"
+                android:textStyle="bold"
+                android:textColor="#FF9800"
+                android:fontFamily="@font/bangers"
+                android:textSize="20sp"
+                android:background="#B8B4B4"
+                android:gravity="center"
+                android:layout_marginTop="16dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#FFC107"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/electronicsDepartment"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/eceNoData"
+                android:orientation="vertical">
+                <include layout="@layout/no_data_found"
+                    android:visibility="gone"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Electrical department"
+                android:textStyle="bold"
+                android:textColor="#FF9800"
+                android:fontFamily="@font/bangers"
+                android:textSize="20sp"
+                android:background="#B8B4B4"
+                android:gravity="center"
+                android:layout_marginTop="16dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#FFC107"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/electricalDepartment"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/eeNoData"
+                android:orientation="vertical">
+                <include layout="@layout/no_data_found"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
 
 </FrameLayout>
