@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.abhishek.collegecu.R;
+import com.bumptech.glide.Glide;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -20,18 +21,18 @@ import java.util.List;
 public class TeacherDataSetAdapter extends RecyclerView.Adapter<TeacherDataSetAdapter.TeacherView> {
     private List<TeacherDataModel> list;
     private Context context;
-    private String category;
 
-    public TeacherDataSetAdapter(List<TeacherDataModel> list, Context context, String category) {
+
+    public TeacherDataSetAdapter(List<TeacherDataModel> list, Context context) {
         this.list = list;
         this.context = context;
-        this.category=category;
+
     }
 
     @NonNull
     @Override
     public TeacherView onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-      View view = LayoutInflater.from(context).inflate(R.layout.teacher_faculty_item_layout,parent,false);
+        View view = LayoutInflater.from(context).inflate(R.layout.teacher_faculty_item_layout, parent, false);
         return new TeacherView(view);
     }
 
@@ -43,27 +44,12 @@ public class TeacherDataSetAdapter extends RecyclerView.Adapter<TeacherDataSetAd
         holder.post.setText(item.getPost());
         if (item.getImage() != null && !item.getImage().isEmpty()) {
             try {
-                Picasso.get().load(item.getImage()).into(holder.image);
+                Glide.with(context).load(item.getImage()).into(holder.image);
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
+
         }
-
-        holder.update.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(context, UpdateTeacherInfo.class);
-                intent.putExtra("name",item.getName());
-                intent.putExtra("email",item.getEmail());
-                intent.putExtra("post",item.getPost());
-                intent.putExtra("image",item.getImage());
-                intent.putExtra("uniqueKey",item.getUniqueKey());
-                intent.putExtra("category",category);
-                context.startActivity(intent);
-
-            }
-        });
     }
 
     @Override
@@ -72,16 +58,16 @@ public class TeacherDataSetAdapter extends RecyclerView.Adapter<TeacherDataSetAd
     }
 
     public class TeacherView extends RecyclerView.ViewHolder {
-        private TextView name,email,post;
-        private Button update;
+        private TextView name, email, post;
+
         private ImageView image;
+
         public TeacherView(@NonNull View itemView) {
             super(itemView);
-            name =itemView.findViewById(R.id.teacherName);
-            email=itemView.findViewById(R.id.teacherEmail);
-            post=itemView.findViewById(R.id.teacherPost);
-            update=itemView.findViewById(R.id.updateTeacherInfo);
-            image=itemView.findViewById(R.id.profileImage);
+            name = itemView.findViewById(R.id.teacherName);
+            email = itemView.findViewById(R.id.teacherEmail);
+            post = itemView.findViewById(R.id.teacherPost);
+            image = itemView.findViewById(R.id.profileImage);
         }
     }
 }

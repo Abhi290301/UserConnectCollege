@@ -1,11 +1,13 @@
 package com.abhishek.collegecu.LoginPages;
-
 import android.os.Bundle;
+import android.os.CountDownTimer;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.abhishek.collegecu.R;
@@ -16,6 +18,11 @@ public class LoginActivity extends AppCompatActivity {
     TextView forgotPassword;
     Button loginBtn;
     CircularProgressIndicator progressBar;
+    private int counter = 3;
+    final int countdownDuration = 3 * 60 * 1000; // 3 minutes in milliseconds
+    AlertDialog alertDialog;
+    CountDownTimer countDownTimer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,21 +37,26 @@ public class LoginActivity extends AppCompatActivity {
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 if (rollNo.getText().toString().isEmpty()) {
                     rollNo.setError("Fill Roll No");
-                    if(password.getText().toString().isEmpty()){
+                    if (password.getText().toString().isEmpty()) {
                         password.setError("Fill password");
-
+                        counter--;
                     }
+                }
 
-
+                if (counter == 0) {
+                    loginBtn.setEnabled(false);
+                    // Display the countdown alert dialog
 
                 }
-                loginBtn.setVisibility(View.INVISIBLE);
-                loginBtn.setVisibility(View.VISIBLE);
+
+
             }
         });
-
     }
+
+
+
+
 }

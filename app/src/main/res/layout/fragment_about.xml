@@ -1,15 +1,491 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Ui.About.AboutFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="About"
-        android:gravity="center"/>
+        android:orientation="vertical">
 
-</FrameLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:id="@+id/collegeImage"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            android:layout_marginTop="@dimen/text_margin"
+            android:layout_marginHorizontal="@dimen/text_margin"
+            android:textSize="@dimen/text_size"
+            android:gravity="fill_horizontal"
+            android:textColor="@color/black"
+            android:fontFamily="@font/latolight"
+            android:justificationMode="inter_word"
+            android:padding="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BRANCHES"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:fontFamily="@font/latobolditalic"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="@dimen/text_margin"
+            android:foregroundGravity="center"
+            android:clickable="true"
+            android:overScrollMode="never"
+            android:id="@+id/viewPager"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#6C6969"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VISION  &amp;  MISSION"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:fontFamily="@font/latobolditalic"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#6C6969"
+            android:layout_margin="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VISION :"
+                android:textSize="25dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="#FF5722"
+                android:fontFamily="@font/latobolditalic"/>
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to_be_a_premier_institution_in_technical_education_and_research_catering_changing_needs_of_the_society"
+            android:layout_marginHorizontal="@dimen/text_margin"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/black"
+            android:fontFamily="@font/latolight"
+            android:justificationMode="inter_word"
+            android:padding="5dp"
+            app:drawableLeftCompat="@drawable/lable" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MISSION :"
+            android:textSize="25dp"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:fontFamily="@font/latobolditalic"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lable"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offer non – formal, flexible, modular, credit based Programmes in engineering and technology and in the areas like Rural Development, Educational planning, Information and Management Science."
+            android:layout_marginHorizontal="5dp"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/black"
+            android:fontFamily="@font/latolight"
+            android:justificationMode="inter_word"
+            android:padding="1dp"
+            />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lable"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conduct various professional programmes with high quality education training and ethics."
+                android:layout_marginHorizontal="5dp"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latolight"
+                android:justificationMode="inter_word"
+                android:padding="1dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lable"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Collaborate with Industries, Institutions and government organization for outreach activities, curriculum alignment, research and consultancy."
+                android:layout_marginHorizontal="5dp"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latolight"
+                android:justificationMode="inter_word"
+                android:padding="1dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lable"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Provide state of the art infrastructure and information resource centre for knowledge sharing and research."
+                android:layout_marginHorizontal="5dp"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latolight"
+                android:justificationMode="inter_word"
+                android:padding="1dp"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#0C0C0C"
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OBJECTIVES"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="#FF5722"
+        android:fontFamily="@font/latobolditalic"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#6C6969"
+        android:layout_margin="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lable"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To offer flexible, modular, layered, multipoint entry/ exit programmes in Engineering and Technology with best possible educational facilities."
+            android:layout_marginHorizontal="5dp"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/black"
+            android:fontFamily="@font/latoregular"
+            android:justificationMode="inter_word"
+            android:padding="1dp"
+            />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lable"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To promote “Self –employment” in all programmes by introducing a component of entrepreneurships and providing and providing guidance and counselling services to help students to take –up self employment venture."
+                android:layout_marginHorizontal="5dp"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latolight"
+                android:justificationMode="inter_word"
+                android:padding="1dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lable"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To provide technical education facilities for women and working personnel from industries through existing or specially designed courses."
+                android:layout_marginHorizontal="5dp"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latolight"
+                android:justificationMode="inter_word"
+                android:padding="1dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lable"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The institute will provide non-formal education and training to persons from unorganized sectors of population and schools drop-outs through its extension services to enable them to acquire basics technical skills. So that they are gainfully employed."
+                android:layout_marginHorizontal="5dp"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latolight"
+                android:justificationMode="inter_word"
+                android:padding="1dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lable"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To strive for continuous improvement on teaching and research in Engineering and Technology disciplines."
+                android:layout_marginHorizontal="5dp"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latolight"
+                android:justificationMode="inter_word"
+                android:padding="1dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lable"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To actively support the growth and quality improvements of technical education in the country through involvement in activities at state and National Level."
+                android:layout_marginHorizontal="5dp"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latolight"
+                android:justificationMode="inter_word"
+                android:padding="1dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lable"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To cooperate with educational or other institutions in any part of the world having objects wholly or partly similar to those of the institutes by exchange of teachers and scholars and generally in such manner as may be conducive to their common objects."
+                android:layout_marginHorizontal="5dp"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latolight"
+                android:justificationMode="inter_word"
+                android:padding="1dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lable"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To undertake consultancy and extension work for industry, technical institutions/organizations."
+                android:layout_marginHorizontal="5dp"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latolight"
+                android:justificationMode="inter_word"
+                android:padding="1dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lable"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Taking initiatives in improving technical education and training in collaboration with industries in the region and formulating such programmes and projects mutually agreed."
+                android:layout_marginHorizontal="5dp"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latolight"
+                android:justificationMode="inter_word"
+                android:padding="1dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lable"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Developing a model in planning and delivering technical education which is industries’ need oriented towards the development of technical man power to cop up with manpower requirement of the state its upcoming projects."
+                android:layout_marginHorizontal="5dp"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latolight"
+                android:justificationMode="inter_word"
+                android:padding="1dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lable"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Developing a close working relationship with employer organizations so that they work as partners of the institute for manpower resources development for themselves with inputs from institute."
+                android:layout_marginHorizontal="5dp"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latolight"
+                android:justificationMode="inter_word"
+                android:padding="1dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lable"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Developing curricula relevant to the industries requirements along with teaching and training material.To provide students with fundamental technical education and skills in mathematics, Science and Engineering."
+                android:layout_marginHorizontal="5dp"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latolight"
+                android:justificationMode="inter_word"
+                android:padding="1dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

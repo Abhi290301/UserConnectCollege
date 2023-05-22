@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginPages.SignUpActivity"
-    android:background="#fff"
+    android:background="@drawable/atal1"
     android:orientation="vertical">
   <ScrollView
       android:layout_width="match_parent"
@@ -16,37 +16,29 @@
         android:layout_height="wrap_content"
       android:orientation="vertical">
 
-  <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="300dp"
-      android:background="@drawable/atal1"
-      android:orientation="horizontal"
-      android:gravity="center"
-      >
-
       <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:layout_gravity="center_vertical"
-          android:layout_marginTop="60dp"
+          android:layout_gravity="center_horizontal"
+          android:layout_margin="50dp"
           android:gravity="center"
           android:padding="8dp"
           android:text="@string/welcome_to_abvgiet_nregister_here"
           android:textStyle="italic|bold"
-          android:textColor="#E9E7EC"
-          android:textSize="30sp"
+          android:textColor="#19C6DC"
+          android:textSize="25sp"
           app:drawableRightCompat="@drawable/signup" />
 
 
-  </LinearLayout>
+
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="20dp"
-        app:cardBackgroundColor="#00BCD4"
+        app:cardBackgroundColor="#1AFFFFFF"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="-50dp"
+
         app:cardElevation="20dp"
         >
 
@@ -64,10 +56,10 @@
           android:layout_margin="20dp">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/rollno"
+            android:id="@+id/signrollno"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#E6D5D5"
+            android:background="#1AFFFFFF"
             android:hint="@string/university_roll_no"
             android:textIsSelectable="true"
             android:textSize="22sp"
@@ -89,7 +81,7 @@
             android:id="@+id/studentName"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#E6D5D5"
+            android:background="#1AFFFFFF"
             android:drawableStart="@drawable/user"
             android:hint="@string/name"
             android:inputType="text"
@@ -107,10 +99,10 @@
           android:layout_margin="20dp">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/email"
+            android:id="@+id/signemail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#E6D5D5"
+            android:background="#1AFFFFFF"
             android:drawableStart="@drawable/email"
             android:hint="E-mail"
             android:inputType="textEmailAddress"
@@ -130,10 +122,10 @@
           >
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/password"
+            android:id="@+id/signpassword"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#E6D5D5"
+            android:background="#1AFFFFFF"
             android:hint="@string/password"
             android:drawableStart="@drawable/passwordicon"
             android:textSize="20sp"
@@ -165,7 +157,7 @@
           android:layout_marginTop="10dp"
           android:padding="5dp"
           android:text="@string/we_learn_from_failure_not_from_success_bram_stoker"
-          android:textColor="#DD2C00"
+          android:textColor="#FFEB3B"
           android:textSize="16sp" />
 
       <TextView
@@ -175,7 +167,7 @@
           android:layout_gravity="center_horizontal"
           android:layout_margin="10dp"
           android:text="@string/app_copyright"
-          android:textColor="#757575"
+          android:textColor="#FF5722"
           android:textSize="12sp" />
     </LinearLayout>
   </ScrollView>
