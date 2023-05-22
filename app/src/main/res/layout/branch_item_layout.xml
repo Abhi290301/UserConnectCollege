@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#AAA7A7"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/text_margin">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/branch_icon"
+                android:src="@drawable/computerscience"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/branch_title"
+                android:text="Computer Science"
+                android:textSize="25dp"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="#FF5722"
+                android:fontFamily="@font/latobolditalic"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/branchDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/the_department_of_computer_science_is_established_in_2012_the_department_of_computer_science_and_engineering_is_a_pioneering_academic_centre_for_education_at_undergraduate_level_the_computer_science_and_engineering_department_of_our_college_holds_prominent_position_in_the_degree_programme_as_it_constently_favours_encouragement_of_students_to_diversify_their_perspective_laboratories_of_the_department_are_equipped_with_state_of_the_art_infrastructure_to_cater_course_work_and_research_activities_this_department_of_abvgiet_continously_trains_students_to_be_self_motivated_computer_science_engineer_with_a_very_high_moral_the_main_objective_of_the_department_is_to_prepare_students_for_software_technology_industry_educational_institutions_and_research_organizations_this_department_witholds_48_seats_for_every_batch_involving_a_team_of_07_dedicated_faculty_members_one_lab_technitions"
+            android:layout_marginHorizontal="5dp"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/latoregular"
+            android:justificationMode="inter_word"
+            android:padding="1dp"
+            />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

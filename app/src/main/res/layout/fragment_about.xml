@@ -42,12 +42,14 @@
 
         <androidx.viewpager.widget.ViewPager
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="500dp"
             android:layout_marginTop="@dimen/text_margin"
             android:foregroundGravity="center"
             android:clickable="true"
             android:overScrollMode="never"
             android:id="@+id/viewPager"/>
+
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
